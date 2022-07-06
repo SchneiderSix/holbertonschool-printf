@@ -5,8 +5,7 @@ int _printf(const char *format, ...)
 {
 	char ch;
 	va_list parameters;
-	unsigned int len = 0;
-	int i;
+	unsigned int len = 0, i;
 
 	va_start(parameters, format);
 	if (format != NULL)
@@ -15,11 +14,10 @@ int _printf(const char *format, ...)
 		{
 			if (format[i] == '%')
 			{
-				switch(format[i + 1])
+				switch (format[i + 1])
 				{
 					case 'c':
-						ch = va_arg(parameters, int);
-						print_char(ch);
+						print_char(va_arg(parameters, int));
 						i += 2;
 						len++;
 						break;
@@ -44,9 +42,7 @@ int _printf(const char *format, ...)
 		}
 	}
 	else
-	{
 		return (-1);
-	}
 	va_end(parameters);
 	return (len);
 }
