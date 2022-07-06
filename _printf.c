@@ -27,15 +27,8 @@ int _printf(const char *format, ...)
 						len += print_string(va_arg(parameters, char *));
 						i += 2;
 						break;
-					case '%':
-						/*print_char('%');
-						len++;
-						i += 2;
-						break;*/
 					case '\0':
 						return (-1);
-						/*i += 2;
-						break;*/
 					default:
 						just_in_case(format[i]);
 						break;

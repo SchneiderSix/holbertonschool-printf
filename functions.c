@@ -32,12 +32,16 @@ int just_in_case(char a)
 {
 	int b = 1;
 	
-	write(1, "%", 1);
 	if (a != '%')
 	{
+		write(1, "%", 1);
 		write(1, &a, 1);
-		b++;
+		b += 2;
 		return (b);
 	}
-	return (b);
+	else
+	{
+		write(1, "%", 1);
+		return (b);
+	}
 }
