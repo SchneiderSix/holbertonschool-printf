@@ -31,6 +31,7 @@ int _printf(const char *format, ...)
 						return (-1);
 					default:
 						len += just_in_case(format[i + 1]);
+						i += 2;
 						break;
 				}
 			}

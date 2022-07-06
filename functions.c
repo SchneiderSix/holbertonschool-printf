@@ -36,12 +36,9 @@ int just_in_case(char a)
 	{
 		write(1, "%", 1);
 		write(1, &a, 1);
-		b += 2;
+		b++;
 		return (b);
 	}
-	else
-	{
-		write(1, "%", 1);
-		return (b);
-	}
+	write(1, "%", 1);
+	return (b);
 }
