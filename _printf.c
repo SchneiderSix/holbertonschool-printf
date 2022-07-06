@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 					case 'c':
 						ch = va_arg(parameters, int);
 						print_char(ch);
-						i + = 2;
+						i += 2;
 						len++;
 						break;
 					case 's':
