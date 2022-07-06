@@ -8,7 +8,7 @@ void print_char(char a)
 int print_string(char *s)
 {
 	char nil[6] = {'(', 'n', 'u', 'l', 'l', ')'};
-	int len;
+	int len, i;
 
 	if (s == NULL)
 	{
