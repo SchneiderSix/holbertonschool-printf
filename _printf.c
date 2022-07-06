@@ -21,10 +21,12 @@ int _printf(const char *format, ...)
 				case 'c':
 					ch = va_arg(parameters, int);
 					write(1, &ch, 1);
+					i++;
 					break;
 				case 's':
 					p = va_arg(parameters, char *);
 					print_string(p);
+					i++;
 					break;
 				default:
 				just_in_case(format[i], format[i + 1]);
