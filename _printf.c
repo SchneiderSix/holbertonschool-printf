@@ -28,20 +28,16 @@ int _printf(const char *format, ...)
 						i += 2;
 						break;
 					case '%':
-						print_char('%');
+						/*print_char('%');
 						len++;
 						i += 2;
-						break;
+						break;*/
 					case '\0':
-						write(1, "", 1);
-						return (len);
+						return (-1);
 						/*i += 2;
 						break;*/
 					default:
-						/*write(1, &format[i], 1);*/
-						write(1, &format[i + 1], 1);
-						len++;
-						i += 2;
+						just_in_case(format[i]);
 						break;
 				}
 			}
@@ -55,8 +51,7 @@ int _printf(const char *format, ...)
 	}
 	else
 	{
-		write(1, "\n", 1);
-		return (len);
+		return (-1);
 	}
 	va_end(parameters);
 	return (len);
