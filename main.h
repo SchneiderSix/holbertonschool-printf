@@ -8,5 +8,6 @@
 
 int _printf(const char *format, ...);
 void print_string(char *);
+void just_in_case(char s, char a);
 
 #endif
