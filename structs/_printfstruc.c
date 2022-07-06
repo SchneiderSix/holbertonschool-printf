@@ -1,6 +1,6 @@
 #include "main.h"
 
-int (*flags_check(const char *format))(va_list)
+static int (*flags_check(const char *format))(va_list)
 {
 	unsigned int i;
 	print_t p[] = {
@@ -10,11 +10,15 @@ int (*flags_check(const char *format))(va_list)
 	};
 	return (p[i].flag);
 
-	/*for (i = 0: p[i].t != NULL; i++)
+	for (i = 0; p[i].po != NULL; i++)
 	{
-		if (*(p[i].t) == *format)
-		{*/
-		
+		if (*(p[i].po) == *format)
+		{
+			break;
+		}
+	}
+	return (p[i].flag);
+}		
 int _printf(const char *format, ...)
 {
 	int i = 0, len = 0;
@@ -26,7 +30,7 @@ int _printf(const char *format, ...)
 	{
 		write(1, "", 1);
 	}
-	va_start(list, format)
+	va_start(list, format);
 	while (format[i])
 	{
 		for(; format[i] && format[i] != '%'; i++)
@@ -36,15 +40,16 @@ int _printf(const char *format, ...)
 		}
 		if(format[i] != per)
 		{
-			write(1, format[i + 1], 1);
+			write(1, &format[i + 1], 1);
 			len++;
 		}
 		else
 		{
-			write(1, per, 1);
-			len++
+			write(1, &per, 1);
+			len++;
 		}
 		i++;
 	}
+	va_end (list);
 	return (len);
 }
