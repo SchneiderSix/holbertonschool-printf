@@ -11,12 +11,12 @@ int print_string(char *s)
 
 	if (s == NULL)
 	{
-		write(1, '(', 1);
-		write(1, 'n', 1);
-		write(1, 'u', 1);
-		write(1, 'l', 1);
-		write(1, 'l', 1);
-		write(1, ')', 1);
+		print_char('(');
+		print_char('n');
+		print_char('u');
+		print_char('l');
+		print_char('l');
+		print_char(')');
 		len = 6;
 		return (len);
 
