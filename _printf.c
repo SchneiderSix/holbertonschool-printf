@@ -3,7 +3,7 @@
 
 int _printf(const char *format, ...)
 {
-	char ch;
+	/*char ch;*/
 	va_list parameters;
 	unsigned int len = 0;
 	int i;
