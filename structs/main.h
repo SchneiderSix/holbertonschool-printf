@@ -11,7 +11,7 @@ typedef struct print
 {
 	int (*flag)(va_list);
 	char *po;
-} print_t
+} print_t;
 
 int _printf(const char *format, ...);
 /*void print_string(char *);
