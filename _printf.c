@@ -1,47 +1,63 @@
 #include "main.h"
-/**
-* _printf - copy of the original printf() function
-* @format: if 'c, s, i or f' passed, acts like a printf() functions
-* otherwise, ignores the character and prints the args passed
-*Return: amount of args passed
-*/
+
+
 int _printf(const char *format, ...)
 {
-	va_list parameters;
-	int i = 0, j = 0;
 	char ch;
+	va_list parameters;
+	unsigned int len = 0;
+	int i;
 
 	va_start(parameters, format);
-	while (format != NULL && format[i] != '\0')
+	if (format != NULL)
 	{
-		if (format[i] == '%')
+		while (format[i] != '\0')
 		{
-			switch (format[i + 1])
+			if (format[i] == '%')
 			{
-				case 'c':
-					ch = va_arg(parameters, int);
-					write(1, &ch, 1);
-					i++;
-					j++;
-					break;
-				case 's':
-					/*p = va_arg(parameters, char *);*/
-					print_string(va_arg(parameters, char *));
-					j += strlen(va_arg(parameters, char *));
-					i++;
-					break;
-				default:
-				j += just_in_case(format[i], format[i + 1]);
+				switch(format[i + 1])
+				{
+					case 'c':
+						ch = va_arg(parameters, int);
+						print_char(ch);
+						len++;
+						i += 2;
+						break;
+					case 's':
+						len += print_string(va_arg(parameters, char *));
+						i += 2;
+						break;
+					case '%':
+						print_char('%');
+						len++;
+						i += 2;
+						break;
+					case '\0':
+						write(1, "", 1);
+						return (len);
+						/*i += 2;
+						break;*/
+					default:
+						/*write(1, &format[i], 1);*/
+						write(1, &format[i + 1], 1);
+						len++;
+						i += 2;
+						break;
+				}
+			}
+			else
+			{
+				print_char(format[i]);
+				len++;
 				i++;
-				break;
 			}
 		}
-		else
-		{
-			j += empty_case(format[i + 1], format[i]);
-		}
-		i++;
+	}
+	else
+	{
+		write(1, "\n", 1);
+		return (len);
 	}
 	va_end(parameters);
-	return (j);
+	return (len);
 }

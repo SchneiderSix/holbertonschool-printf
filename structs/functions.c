@@ -2,7 +2,8 @@
 
 int print_char(a)
 {
-	write(1, a, 1);
+	write(1, &a, 1);
+	return (1);
 }
 
 int print_string(b)
@@ -12,4 +13,5 @@ int print_string(b)
 	{
 		write(1, &b[i], 1);
 	}
+	return (i);
 }

@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int len, len2;
+	/*int len, len2;
 
 	len = _printf("%c", 'S');
 	len2 = printf("%c", 'S');
@@ -22,8 +22,11 @@ int main(void)
 		return (1);
 	}
 	printf("\nlen1: %d\nlen2: %d\n", len, len2);
-	/*_printf("%%\n");
+	_printf("%s", "Hola");
+	s_printf("%c %s Hola\n", 'H', "Hola");
+	_printf("%%\n");
 	_printf("%a\n");
 	_printf("%");*/
+	s_printf("%c %s Hola", 'H', "Hola");
 	return (0);
 }
