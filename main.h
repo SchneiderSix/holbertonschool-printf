@@ -8,7 +8,7 @@
 #include <string.h>
 
 int _printf(const char *format, ...);
-void print_char(char a);
+int print_char(char a);
 int print_string(char *a);
 int just_in_case(char a);
 

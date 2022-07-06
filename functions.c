@@ -1,8 +1,10 @@
 #include "main.h"
 
-void print_char(char a)
+int print_char(char a)
 {
+	int j = 1;
 	write(1, &a, 1);
+	return (j);
 }
 
 int print_string(char *s)
