@@ -7,7 +7,11 @@
 #include <stdarg.h>
 #include <string.h>
 
-typedef struct 
+typedef struct print
+{
+	int (*f)(va_list);
+	char *po;
+} print_t
 
 int _printf(const char *format, ...);
 void print_string(char *);
