@@ -31,7 +31,6 @@ int _printf(const char *format, ...)
 					i++;
 					break;
 				default:
-				just_in_case(format[i], format[i + 1]);
 				j += just_in_case(format[i], format[i + 1]);
 				i++;
 				break;
@@ -39,7 +38,6 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			empty_case(format[i + 1], format[i]);
 			j += empty_case(format[i + 1], format[i]);
 		}
 		i++;
