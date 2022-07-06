@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	va_list parameters;
-	int i = 0/*j = 0*/;
+	int i = 0, j;
 	char *p;
 	char ch;
 
@@ -45,6 +45,7 @@ int _printf(const char *format, ...)
 		}
 		i++;
 	}
+    j = i - 1;
 	va_end(parameters);
-	return (i);
+	return (j);
 }
