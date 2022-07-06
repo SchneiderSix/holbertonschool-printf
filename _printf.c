@@ -15,22 +15,21 @@ int _printf(const char *format, ...)
 		{
 			if (format[i] == '%')
 			{
-				switch(format[i + 1])
+				i++;
+				switch(format[i])
 				{
 					case 'c':
 						ch = va_arg(parameters, int);
 						print_char(ch);
 						len++;
-						i += 2;
 						break;
 					case 's':
 						len += print_string(va_arg(parameters, char *));
-						i += 2;
 						break;
 					case '\0':
 						return (-1);
 					default:
-						just_in_case(format[i]);
+						len += just_in_case(format[i]);
 						break;
 				}
 			}
