@@ -7,7 +7,7 @@ void print_char(char a)
 
 int print_string(char *s)
 {
-	int len, i;
+	int len;
 
 	if (s == NULL)
 	{
