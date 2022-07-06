@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	va_list parameters;
-	int i = 0/*, j*/;
+	int i = 0, j = 0;
 	char *p, ch;
 
 	va_start(parameters, format);
@@ -22,28 +22,28 @@ int _printf(const char *format, ...)
 					ch = va_arg(parameters, int);
 					write(1, &ch, 1);
 					i++;
+					j++;
 					break;
 				case 's':
-					p = va_arg(parameters, char *);
-					print_string(p);
+					/*p = va_arg(parameters, char *);*/
+					print_string(va_arg(parameters, char *));
+					j += strlen(va_arg(parameters, char *));
 					i++;
 					break;
 				default:
 				just_in_case(format[i], format[i + 1]);
+				j += just_in_case(format[i], format[i + 1]);
 				i++;
 				break;
 			}
 		}
 		else
 		{
-			if (format[i + 1] == '\0' && format[i] == '%')
-			{
-				write(1, "", 1);
-			}
-			write(1, &format[i], 1);
+			empty_case(format[i + 1], format[i]);
+			j += empty_case(format[i + 1], format[i]);
 		}
 		i++;
 	}
 	va_end(parameters);
-	return (i - 1);
+	return (j);
 }
