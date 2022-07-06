@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 {
 	va_list parameters;
 	int i = 0, j = 0;
-	char *p, ch;
+	char ch;
 
 	va_start(parameters, format);
 	while (format != NULL && format[i] != '\0')
