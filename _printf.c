@@ -8,9 +8,8 @@
 int _printf(const char *format, ...)
 {
 	va_list parameters;
-	int i = 0, j;
-	char *p;
-	char ch;
+	int i = 0/*, j*/;
+	char *p, ch;
 
 	va_start(parameters, format);
 	while (format != NULL && format[i] != '\0')
@@ -20,32 +19,29 @@ int _printf(const char *format, ...)
 			switch (format[i + 1])
 			{
 				case 'c':
-				{
 					ch = va_arg(parameters, int);
 					write(1, &ch, 1);
-					i++;
 					break;
-				}
 				case 's':
-				{
 					p = va_arg(parameters, char *);
 					print_string(p);
-					i++;
 					break;
-				}
 				default:
-					i++;
-					continue;
+				just_in_case(format[i], format[i + 1]);
+				i++;
+				break;
 			}
 		}
 		else
 		{
-			/*printf("Wrote format[i]\n");*/
+			if (format[i + 1] == '\0' && format[i] == '%')
+			{
+				write(1, "", 1);
+			}
 			write(1, &format[i], 1);
 		}
 		i++;
 	}
-    j = i - 1;
 	va_end(parameters);
-	return (j);
+	return (i);
 }
