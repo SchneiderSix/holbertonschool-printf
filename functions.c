@@ -7,12 +7,12 @@ void print_char(char a)
 
 int print_string(char *s)
 {
-	char nil[6] = {'(', 'n', 'u', 'l', 'l', ')'};
+	char nil[6] = "(null)";
 	int len, i;
 
 	if (s == NULL)
 	{
-		for (i = 0; i < 6; i++)
+		for (i = 0; i < 7; i++)
 		{
 			write(1, &nil[i], 1);
 			len = 6;
