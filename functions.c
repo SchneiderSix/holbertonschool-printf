@@ -7,8 +7,19 @@ void print_char(char a)
 
 int print_string(char *s)
 {
+	char nil[6] = {'(', 'n', 'u', 'l', 'l', ')'};
 	int len;
 
+	if (s == NULL)
+	{
+		for (i = 0; i < 6; i++)
+		{
+			write(1, &nil[i], 1);
+			len = 6;
+			return (len);
+		}
+
+	}
 	for (len = 0; s[len] != '\0'; len++)
 	{
 		write(1, &s[len], 1);
