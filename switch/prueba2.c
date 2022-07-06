@@ -35,7 +35,7 @@ int main(void)
 	printf("Equal length\n");
 	return (0);*/
 
-	int len, len2;
+	/*int len, len2;
 
 	len = _printf("%!\n");
 	len2 = printf("%!\n");
@@ -45,6 +45,7 @@ int main(void)
 		printf("Lengths differ.\n");
 		fflush(stdout);
 		return (1);
-	}
+	}*/
+	_printf(NULL);
 	return (0);
 }
