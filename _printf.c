@@ -1,9 +1,13 @@
 #include "main.h"
-
+/**
+* _printf - copy of the original printf C Function
+* @format: the format
+*
+*Return: the amount of chars printed
+*/
 
 int _printf(const char *format, ...)
 {
-	char ch;
 	va_list parameters;
 	unsigned int len = 0, i;
 
@@ -35,8 +39,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				print_char(format[i]);
-				len++;
+				len += print_char(format[i]);
 				i++;
 			}
 		}
