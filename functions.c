@@ -87,7 +87,7 @@ int print_number(int num, char *buff, int base)
 
 	while (num != 0)
 	{
-		int res = num % base;
+		res = num % base;
 		buff[i++] = (res > 9)? (res - 10) + 'a' : res + '0';
 		len++;
 		num /= base;

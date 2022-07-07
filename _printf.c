@@ -10,7 +10,6 @@ int _printf(const char *format, ...)
 {
 	va_list parameters;
 	unsigned int len = 0, i;
-	int j;
 	char num[100];
 
 	va_start(parameters, format);
