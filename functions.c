@@ -67,46 +67,34 @@ int just_in_case(char a)
 * @base: the base
 *Return: the amount of numbers printed
 */
-int print_number(int num, char *buff, int base)
+int print_number(int num)
 {
-	int n,i, len = 0, r;
+	char buff[100];
+	long int n = num;
+	long int i;
+	int len = 0;
 
-	if (base < 2 || base > 32)
+	if (n == 0)
 	{
-		len = 0;
-		print_string(buff);
+		print_char('0');
+		len ++;
 		return (len);
 	}
-	n = ABS(num);
-	i  = 0;
-	if (num < 0 && base == 10)
+	if (n < 0)
 	{
-		buff[i++] = '-';
-		num *= -1;
+		print_char('-');
+		len++;
+		n *= -1;
+	}
+	for (i = 1; i <= n; i = i * 10)
+	{
 		len++;
 	}
-	while (n)
+	i = i / 10;
+	for (i = 1; i > 0; i = i / 10)
 	{
-		r = n % base;
-		if (r >= 10)
-		{
-			buff[i++] = 65 + (r - 10);
-			len++;
-		}
-		else
-		{
-			buff[i++] = 48 + r;
-			len++;
-		}
-		n /= base;
+		buff[i++] = (((num / 10) % 10) + '0');
 	}
-	if (i == 0)
-	{
-		buff[i++] = '0';
-		len++;
-	}
-	buff[i] = '\0';
-	rev(buff, 0, i - 1);
 	print_string(buff);
 	return (len);
 }
@@ -115,7 +103,6 @@ int print_number(int num, char *buff, int base)
 * @s: the string
 *Return: void function...
 *
-*/
 char *rev(char *s, int a, int b)
 {
 	while (a < b)
@@ -131,4 +118,4 @@ void swap(char *a, char *b)
 	temp = *a;
 	*a = *b;
 	*b = temp;
-}
+}*/
