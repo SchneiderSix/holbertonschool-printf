@@ -10,6 +10,8 @@ int _printf(const char *format, ...)
 {
 	va_list parameters;
 	unsigned int len = 0, i;
+	int j;
+	char num[100];
 
 	va_start(parameters, format);
 	if (format != NULL)
@@ -28,6 +30,13 @@ int _printf(const char *format, ...)
 					case 's':
 						len += print_string(va_arg(parameters, char *));
 						i += 2;
+						break;
+					case 'd':
+						len += print_number(va_arg(parameters, int), num, 10);
+						i +=2;
+						break;
+					case 'i':
+						len += print_number(va_arg(parameters, int), num, 10);
 						break;
 					case '\0':
 						return (-1);

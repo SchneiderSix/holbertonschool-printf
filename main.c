@@ -9,7 +9,10 @@
  */
 int main(void)
 {
-    int len;
+    int prueba = -10;
+    int numero2 = 100;
+    int numero3 = 25550;
+    /*int len;
     int len2;
     unsigned int ui;
     void *addr;
@@ -39,6 +42,7 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
+    printf("Unknown:[%r]\n");*/
+    _printf("%d\n%d\n%d", prueba, numero2, numero3);
     return (0);
 }
