@@ -12,6 +12,6 @@ int print_char(char a);
 int print_string(char *a);
 int just_in_case(char a);
 int print_number(int j, char *buff, int base);
-void rev(char *s);
-
+char *rev(char *s, int a, int b);
+void swap(char *a, char *b);
 #endif
