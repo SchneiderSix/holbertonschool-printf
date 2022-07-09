@@ -23,7 +23,7 @@ void pi(int num);
 /*int my_itoa(int val, char *buff);*/
 /*char *_strcpy(char *dest, char *src);*/
 int _strle(char *s);
-/*char *s_itoa(int num, int base);
-void rev_str(char *s);*/
+/*char *s_itoa(int num, int base);*/
+/*void rev_str(char *s);*/
 
 #endif /*MAIN_H*/
