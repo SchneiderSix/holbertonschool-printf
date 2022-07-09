@@ -57,6 +57,11 @@ int just_in_case(char a)
 	write(1, "%", 1);
 	return (b);
 }
+/**
+* print_per_d - prints the %d and %i flag
+* @n: the number
+*Return: the amount of nums printed
+*/
 int print_per_d(int n)
 {
 	unsigned int tmpNum, finalNum, len = 0, count;
