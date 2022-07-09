@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 		print_char('%');
 		j++;
 		break;
-	case '\0';
+	case '\0':
 		break;
 	}
         /* Convert hex */
