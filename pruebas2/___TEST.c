@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-#include <string.h>
-#include <stddef.h>
-#include <limits.h>
+#include "main.h"
 
 char *_strrev (char *str)
 {
@@ -28,7 +23,7 @@ char * _itoa(int i, char *strout, int base)
 {
   char *str = strout;
   int digit, sign = 0;
-  if (i < 0 && i = INT_MIN) {
+  if (i < 0 && i == INT_MIN) {
     sign = 1;
     i *= -1;
   }
@@ -46,69 +41,69 @@ char * _itoa(int i, char *strout, int base)
   return strout;
 }
 
-int print (char * str, ...)
+int print (char * format, ...)
 {
-  va_list vl;
+  va_list parameters;
   int i = 0, j=0;
   char buff[100]={0}, tmp[20];
   char * str_arg;
   
-  va_start( vl, str );
-  while (str && str[i])
+  va_start(parameters, format);
+  while (format && format[i])
   {
-    if(str[i] == '%'){
+    if(format[i] == '%'){
       i++;
-      switch (str[i]) {
+      switch (format[i]) {
         /* Convert char */
         case 'c': {
-          buff[j] = (char)va_arg( vl, int );
+          buff[j] = (char)va_arg(parameters, int );
           j++;
           break;
         }
         /* Convert decimal */
         case 'd': {
-          _itoa(va_arg( vl, int ), tmp, 10);
-          strcpy(&buff[j], tmp);
-          j += strlen(tmp);
+          j += print_int(va_arg(parameters, int));
+          //strcpy(&buff[j], tmp);
+          //j += strlen(tmp);
           break;
         }
         /* Convert hex */
         case 'x': {
-          _itoa(va_arg( vl, int ), tmp, 16);
-          strcpy(&buff[j], tmp);
-          j += strlen(tmp);
+          //_itoa(va_arg( vl, int ), tmp, 16);
+          //strcpy(&buff[j], tmp);
+          //j += strlen(tmp);
           break;
         }
         /* Convert octal */
         case 'o': {
-          _itoa(va_arg( vl, int ), tmp, 8);
-          strcpy(&buff[j], tmp);
-          j += strlen(tmp);
+          //_itoa(va_arg( vl, int ), tmp, 8);
+          //strcpy(&buff[j], tmp);
+          //j += strlen(tmp);
           break;
         }
         /* copy string */
         case 's': {
-          str_arg = va_arg( vl, char* );
-          strcpy(&buff[j], str_arg);
-          j += strlen(str_arg);
+          //str_arg = va_arg( vl, char* );
+          //strcpy(&buff[j], str_arg);
+          //j += strlen(str_arg);
           break;
         }
       }
     } else {
-      buff[j] =str[i];
+      buff[j] = format[i];
       j++;
     }
     i++;
   } 
   fwrite(buff, j, 1, stdout); 
-  va_end(vl);
-  return j;
+  va_end(parameters);
+  return (j);
 }
-int main (int argc, char *argv[])
+/*int main (int argc, char *argv[])
 {
   int ret;
   ret = print("%c %d %o %x %s\n", 'A', INT_MAX, 100, 1000, "Hello from printf!");
   printf("printf returns %d bytes\n", ret);
   print("%c\n%c\n%s\n%s\n%d\n%d", 'a', 'b', "hello", "rip", 10, 11);
   return 0;
-}
+}*/
