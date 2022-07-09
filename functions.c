@@ -55,8 +55,6 @@ int just_in_case(char a)
 		return (b);
 	}
 	write(1, "%", 1);
-	write(1, "%", 1);
-	b++;
 	return (b);
 }
 int print_per_d(int n)
