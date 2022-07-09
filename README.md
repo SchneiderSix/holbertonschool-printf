@@ -1,3 +1,3 @@
-# _printf - C Function
+ _printf - C Function
 ## Hola
 ### Adios
