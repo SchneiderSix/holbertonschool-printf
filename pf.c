@@ -29,6 +29,12 @@ int _printf(const char *format, ...)
 				case 's':
 					j += print_string(va_arg(parameters, char *));
 					break;
+				case 'd':
+					j += print_per_d(va_arg(parameters, int));
+					break;
+				case 'i':
+					j += print_per_d(va_arg(parameters, int));
+					break;
 				case '\0':
 					return (-1);
 				default:
