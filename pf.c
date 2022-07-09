@@ -23,6 +23,12 @@ int _printf(const char *format, ...)
 	case 'i': {
 		j += print_per_d(va_arg(parameters, int));
 		break;
+	case '%':
+		print_char('%');
+		j++;
+		break;
+	case '\0';
+		break;
 	}
         /* Convert hex */
         case 'x': {
