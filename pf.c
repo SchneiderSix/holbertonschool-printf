@@ -10,6 +10,11 @@ int _printf(const char *format, ...)
 	int i = 0, j=0;
 
 	va_start(parameters, format);
+	if (format == NULL)
+	{
+		va_end(parameters);
+		return (-1);
+	}
 	while (format && format[i])
 	{
 		if(format[i] == '%')
@@ -30,14 +35,14 @@ int _printf(const char *format, ...)
 				case 's':
 					j += print_string(va_arg(parameters, char *));
 					break;
-				case '%':
+				/*case '%':
 					print_char('%');
 					j++;
-					break;
+					break;*/
 				case '\0':
 					return (-1);
 				default:
-					j += just_in_case(va_arg(parameters, int));
+					j += just_in_case(format[i]);
 					break;
 			}
         	}
@@ -48,6 +53,6 @@ int _printf(const char *format, ...)
 		}
 		i++;
   	}
-  va_end(parameters);
-  return (j);
+	va_end(parameters);
+  	return (j);
 }

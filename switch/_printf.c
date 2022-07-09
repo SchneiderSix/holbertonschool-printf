@@ -47,5 +47,5 @@ int _printf(const char *format, ...)
 		return (len);
 	}
 	/*va_end(parameters);
-	return (len);*/
+	ireturn (len);*/
 }
