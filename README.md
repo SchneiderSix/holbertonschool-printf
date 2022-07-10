@@ -75,7 +75,7 @@ Our printf was made with three files, we have our libraries and our functions de
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Call the function just like this `_printf` and pass the right parameters, just like with printf. An example would be `_printf("%s", "school")` this is going to print `school`. The main file works with a switch, it detects what letter is after the `%`, then it calls the right function to do the right conversion returning the lenght and printing the result.
+Call the function just like this `_printf` and pass the right parameters, just like with printf. An example would be `_printf("%s", "school")` this is going to print `school`. The main file works with a switch, it detects what is after the `%`, then it calls the right function to do the right conversion returning the lenght and printing the result.
 
 In `funcions.c` there are four functions:
 
@@ -86,7 +86,7 @@ In `funcions.c` there are four functions:
   It prints a string itinerating each character and returning the lenght of the string. If the given string is null then it prints `(null)`.
 
 * `int just_in_case(char a)`
-  It prints 
+  It is in the default option of the switch because it prints whatever is after the `%` when it doesn't have the right parameter, example `%a`. In cases like `%%` it just prints one `%`. 
 
 * `int print_per_d(int n)`
 
