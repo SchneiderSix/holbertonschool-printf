@@ -84,7 +84,7 @@ In `funcions.c` there are four functions:
 <!-- CONTACT -->
 ## Contact
 
-* Mateo Bonino - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+* Mateo Bonino - mbonino1810@gmail.com
 
 * Juan Matías Rossi - [Instagram](https://www.instagram.com/jumaro35/) - [Linkedin](https://www.linkedin.com/in/jmrossi6/) - knuckles116635@gmail.com
 
