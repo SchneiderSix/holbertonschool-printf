@@ -79,15 +79,15 @@ Call the function just like this `_printf` and pass the right parameters, just l
 
 In `funcions.c` there are four functions:
 
-# * `void print_char(char a)`
+* `void print_char(char a)`
 
 It prints the given char with the function `write(int fildes, const void *buf, size_t nbytes);`.
 
-# * `int print_string(char *s)`
+* `int print_string(char *s)`
 
-# * `int just_in_case(char a)`
+* `int just_in_case(char a)`
 
-# * `int print_per_d(int n)`
+* `int print_per_d(int n)`
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
