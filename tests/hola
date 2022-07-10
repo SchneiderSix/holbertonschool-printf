@@ -1,5 +1,0 @@
-format_switch(format[i + 1]
-
-format_switch(char a)
-
-switch (a)
