@@ -76,12 +76,15 @@ Our printf was made with three files, we have our libraries and our functions de
 
 Call the function just like this `_printf` and pass the right parameters, just like with printf. An example would be `_printf("%s", "school")` this is going to print `school`. The main file works with a switch, it detects what letter is after the `%`, then it calls the right function to do the right conversion returning the lenght and printing the result.
 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Mateo Bonino - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+
+Juan Matías Rossi - [Instagram](https://www.instagram.com/jumaro35/) [Linkedin](https://www.linkedin.com/in/jmrossi6/) - knuckles116635@gmail.com
 
 Project Link: [https://github.com/SchneiderSix/holbertonschool-printf](https://github.com/SchneiderSix/holbertonschool-printf)
 
