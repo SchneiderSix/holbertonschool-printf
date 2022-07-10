@@ -49,6 +49,7 @@
       <a href="#getting-started">Getting Started</a>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#flowchart">Flowchart</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -76,6 +77,25 @@ Our printf was made with three files, we have our libraries and our functions de
 
 Call the function just like this `_printf` and pass the right parameters, just like with printf. An example would be `_printf("%s", "school")` this is going to print `school`. The main file works with a switch, it detects what letter is after the `%`, then it calls the right function to do the right conversion returning the lenght and printing the result.
 
+In `funcions.c` there are four functions:
+
+# * `void print_char(char a)`
+
+It prints the given char with the function `write(int fildes, const void *buf, size_t nbytes);`.
+
+# * `int print_string(char *s)`
+
+# * `int just_in_case(char a)`
+
+# * `int print_per_d(int n)`
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- FLOWCHART -->
+## Flowchart
+
+<img src="images/>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
