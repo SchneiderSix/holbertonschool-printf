@@ -21,7 +21,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/SchneiderSix/holbertonschool-printf">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -68,7 +68,7 @@ This is a mandatory project for Holberton School made by two students from cohor
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Our printf is made with three files, we have our libraries and our functions definied in our header `main.h`. The operation of the functions are defined in `functions.c` and the main file is `pf.c`.
+Our printf was made with three files, we have our libraries and our functions definied in our header `main.h`. The operation of the functions are defined in `functions.c` and the main file is `pf.c`.
 
 
 <!-- USAGE EXAMPLES -->
