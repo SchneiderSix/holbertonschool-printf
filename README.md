@@ -82,9 +82,9 @@ Call the function just like this `_printf` and pass the right parameters, just l
 <!-- CONTACT -->
 ## Contact
 
-Mateo Bonino - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+* Mateo Bonino - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Juan Matías Rossi - [Instagram](https://www.instagram.com/jumaro35/) - [Linkedin](https://www.linkedin.com/in/jmrossi6/) - knuckles116635@gmail.com
+* Juan Matías Rossi - [Instagram](https://www.instagram.com/jumaro35/) - [Linkedin](https://www.linkedin.com/in/jmrossi6/) - knuckles116635@gmail.com
 
 Project Link: [https://github.com/SchneiderSix/holbertonschool-printf](https://github.com/SchneiderSix/holbertonschool-printf)
 
