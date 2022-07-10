@@ -77,7 +77,7 @@ In `funcions.c` there are four functions:
 <!-- FLOWCHART -->
 ## Flowchart
 
-<img src="images/Flowchar.jpg" width="80px" height="auto">
+<img src="images/Flowchar.jpg" alt="Logo" width="80" height="80">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
