@@ -80,12 +80,13 @@ Call the function just like this `_printf` and pass the right parameters, just l
 In `funcions.c` there are four functions:
 
 * `void print_char(char a)`
-
-It prints the given char with the function `write(int fildes, const void *buf, size_t nbytes);`.
+  It prints the given char with the function `write(int fildes, const void *buf, size_t nbytes);`.
 
 * `int print_string(char *s)`
+  It prints a string itinerating each character and returning the lenght of the string. If the given string is null then it prints `(null)`.
 
 * `int just_in_case(char a)`
+  It prints 
 
 * `int print_per_d(int n)`
 
