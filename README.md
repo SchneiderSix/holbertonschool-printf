@@ -109,7 +109,7 @@ Print Decimal
 printf_("%d\n", 11);
 ```
 
-Output: `11`
+<p align="middle">Output: `11`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
