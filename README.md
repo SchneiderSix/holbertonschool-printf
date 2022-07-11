@@ -55,7 +55,7 @@ Our printf was made with three files, we have our libraries and our functions de
 <p align="middle">Clone the repository
 
 ``` javascript
-https://github.com/SchneiderSix/holbertonschool-printf.git
+git clone https://github.com/SchneiderSix/holbertonschool-printf.git
 ```
 <p align="middle">Use these flags if you want to compile
 
