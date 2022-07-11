@@ -31,6 +31,7 @@
       <a href="#getting-started">Getting Started</a>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#examples">Examples</a></li>
     <li><a href="#flowchart">Flowchart</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -78,6 +79,37 @@ In `funcions.c` there are four functions:
 ## Flowchart
 
 <img src="images/Flowchart.jpg" alt="flowchart" width="auto" height="auto" align="middle">
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- EXAMPLES -->
+## Examples
+Print Char
+``` javascript
+printf_("%c\n", 'z');
+```
+Output: `z`
+
+Print String
+``` javascript
+printf_("%s\n", "pepito");
+```
+
+Output: `pepito`
+
+Print Int
+``` javascript
+printf_("%i\n", 10);
+```
+
+Output: `10`
+
+Print Decimal
+``` javascript
+printf_("%d\n", 11);
+```
+
+Output: `11`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
