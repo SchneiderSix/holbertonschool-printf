@@ -85,12 +85,14 @@ In `funcions.c` there are four functions:
 <!-- EXAMPLES -->
 ## Examples
 <p align="middle">Print Char
+
 ``` javascript
 printf_("%c\n", 'z');
 ```
 Output: `z`
 
 <p align="middle">Print String
+
 ``` javascript
 printf_("%s\n", "pepito");
 ```
@@ -98,6 +100,7 @@ printf_("%s\n", "pepito");
 Output: `pepito`
 
 <p align="middle">Print Int
+
 ``` javascript
 printf_("%i\n", 10);
 ```
