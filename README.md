@@ -87,14 +87,14 @@ In `funcions.c` there are four functions:
 <p align="middle">Print Char
 
 ``` javascript
-printf_("%c\n", 'z');
+_printf("%c\n", 'z');
 ```
 Output: `z`
 
 <p align="middle">Print String
 
 ``` javascript
-printf_("%s\n", "pepito");
+_printf("%s\n", "pepito");
 ```
 
 Output: `pepito`
@@ -102,7 +102,7 @@ Output: `pepito`
 <p align="middle">Print Int
 
 ``` javascript
-printf_("%i\n", 10);
+_printf("%i\n", 10);
 ```
 
 Output: `10`
@@ -110,7 +110,7 @@ Output: `10`
 <p align="middle">Print Decimal
 
 ``` javascript
-printf_("%d\n", 11);
+_printf_("%d\n", 11);
 ```
 
 Output: `11`
