@@ -97,19 +97,19 @@ printf_("%s\n", "pepito");
 
 Output: `pepito`
 
-Print Int
+<p align="middle">Print Int
 ``` javascript
 printf_("%i\n", 10);
 ```
 
 Output: `10`
 
-Print Decimal
+<p align="middle">Print Decimal
 ``` javascript
 printf_("%d\n", 11);
 ```
 
-<p align="middle">Output: `11`
+Output: `11`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
