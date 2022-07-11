@@ -84,20 +84,20 @@ In `funcions.c` there are four functions:
 
 <!-- EXAMPLES -->
 ## Examples
-Print Char
+<p align="middle">Print Char
 ``` javascript
 printf_("%c\n", 'z');
 ```
 Output: `z`
 
-Print String
+<p align="middle">Print String
 ``` javascript
 printf_("%s\n", "pepito");
 ```
 
 Output: `pepito`
 
-Print Int
+<p align="middle">Print Int
 ``` javascript
 printf_("%i\n", 10);
 ```
