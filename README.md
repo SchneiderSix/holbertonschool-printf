@@ -57,24 +57,24 @@ Our printf was made with three files, we have our libraries and our functions de
 ``` javascript
 git clone https://github.com/SchneiderSix/holbertonschool-printf.git
 ```
-<p align="middle">Use these flags if you want to compile
+<p align="middle"><b>Use these flags if you want to compile</b>
 
 ``` javascript
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89
 ```
-<p align="middle">Also use these files (remember to add your file here)
+<p align="middle"><b>Also use these files (remember to add your file here)</b>
 
 ``` javascript
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 functions.c main.h pf.c
 ```
 
-<p align="middle">Execute the built executable file
+<p align="middle"><b>Execute the built executable file</b>
 
 ``` javascript
 ./a.out
 ```
 
-<p align="middle">You can read the man file just like this
+<p align="middle"><b>You can read the man file just like this</b>
 
 ``` javascript
 man ./man_3_printf
@@ -111,14 +111,14 @@ In `funcions.c` there are four functions:
 
 <!-- EXAMPLES -->
 ## Examples
-<p align="middle">Print Char
+<p align="middle"><b>Print Char</b>
 
 ``` javascript
 _printf("%c\n", 'z');
 ```
 Output: `z`
 
-<p align="middle">Print String
+<p align="middle"><b>Print String</b>
 
 ``` javascript
 _printf("%s\n", "pepito");
@@ -126,7 +126,7 @@ _printf("%s\n", "pepito");
 
 Output: `pepito`
 
-<p align="middle">Print Int
+<p align="middle"><b>Print Int</b>
 
 ``` javascript
 _printf("%i\n", 10);
@@ -134,7 +134,7 @@ _printf("%i\n", 10);
 
 Output: `10`
 
-<p align="middle">Print Decimal
+<p align="middle"><b>Print Decimal</b>
 
 ``` javascript
 _printf_("%d\n", 11);
