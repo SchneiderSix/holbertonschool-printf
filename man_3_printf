@@ -1,0 +1,33 @@
+./Manpage for _printf
+.TH man 3 "10 July 2022" "_printf man page"
+
+.SH NAME
+.B _printf - C Function
+- _printf is a copy of the original printf() C Function from standard input-output library.
+All the program functions are written in C, and everything was compiled using version 9.4.0 of GCC Compiler
+
+.SH SYNOPSIS
+The function prototype is _printf(const char *format, ...) and to call the function you only have to add the right parameters inside the parentheses.
+
+.SH DESCRIPTION
+The function can print any string passed inside double quotes, or you can calle parameters and enter your variables/text outside the double quotes.
+
+.SH CONVERSION CHARACTERS
+.B The conversion specifiers and their meaning are:
+.IP - %d - Prints a decimal number
+.IP - %i - Prints a integer number
+.IP - %c - Prints a character
+.IP - %s - Prints a string
+
+.SH EXAMPLES
+For example if you call the function like _printf("Hello%s\n", ", World!");
+The function will return: Hello, World!
+
+.SH BUGS
+No bugs known.
+
+.SH AUTHOR
+Mateo Bonino (mbonino1810@gmail.com) and Juan Matias Rossi (knuckles116635@gmail.com)
+
+.SH COPYRIGHT
+Copyright 2022 Holberton School B. 
