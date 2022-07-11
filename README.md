@@ -52,7 +52,29 @@ This is a mandatory project for Holberton School made by two students from cohor
 ## Getting Started
 
 Our printf was made with three files, we have our libraries and our functions definied in our header `main.h`. The operation of the functions are defined in `functions.c` and the main file is `pf.c`.
+<p align="middle">Clone the repository
+``` javascript
+https://github.com/SchneiderSix/holbertonschool-printf.git
+```
+<p align="middle">Use these flags if you want to compile
+``` javascript
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+```
+<p align="middle">Also use these files (remember to add your file here)
+``` javascript
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 functions.c main.h pf.c
+```
 
+<p align="middle">Execute the built executable file
+``` javascript
+./a.out
+```
+
+<p align="middle">You can read the man file just like this
+``` javascript
+man ./man_3_printf
+```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
