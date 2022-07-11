@@ -97,7 +97,7 @@ printf_("%s\n", "pepito");
 
 Output: `pepito`
 
-<p align="middle">Print Int
+Print Int
 ``` javascript
 printf_("%i\n", 10);
 ```
@@ -105,6 +105,7 @@ printf_("%i\n", 10);
 Output: `10`
 
 <p align="middle">Print Decimal
+
 ``` javascript
 printf_("%d\n", 11);
 ```
