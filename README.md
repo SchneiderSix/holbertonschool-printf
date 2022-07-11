@@ -52,7 +52,7 @@ This is a mandatory project for Holberton School made by two students from cohor
 ## Getting Started
 
 Our printf was made with three files, we have our libraries and our functions definied in our header `main.h`. The operation of the functions are defined in `functions.c` and the main file is `pf.c`.
-<p align="middle">Clone the repository
+<p align="middle"><b>Clone the repository</b>
 
 ``` javascript
 git clone https://github.com/SchneiderSix/holbertonschool-printf.git
